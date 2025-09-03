@@ -1,0 +1,132 @@
+# ================================
+# Ko Lake Villa Optimized GitIgnore
+# ================================
+
+# --------
+# Node.js
+# --------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --------
+# Build Artifacts
+# --------
+.next/
+dist/
+out/
+coverage/
+*.log
+
+# --------
+# Replit Specific
+# --------
+.replit
+.repl_history
+.replitignore
+.replitcache
+*.repl
+
+# --------
+# Temporary & Cache Files
+# --------
+tmp/
+temp/
+.cache/
+*.tmp
+*.swp
+
+# --------
+# Logs & Debug Data
+# --------
+logs/
+*.log
+*.bak
+*.old
+debug.log
+error.log
+
+# --------
+# Secrets & Environment Files
+# --------
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.vercel
+.env.template
+firebase-debug.log
+secrets.json
+secrets_backup.txt
+
+# --------
+# Firebase & Google Cloud
+# --------
+# Service account keys
+*serviceAccountKey.json
+*.firebase.json
+google-credentials.json
+client_secret*.json
+
+# --------
+# Stripe Files
+# --------
+stripe-*.json
+stripe-keys.json
+
+# --------
+# Media Files - Large Storage
+# --------
+uploads/
+objects/
+public/videos/
+public/images/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webp
+*.svg
+
+# --------
+# Backups & Exports
+# --------
+*.zip
+*.tar
+*.gz
+*.bz2
+*.rar
+*.7z
+*.bak
+
+# --------
+# OS Files
+# --------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --------
+# VSCode & IDE Settings
+# --------
+.vscode/
+.idea/
+*.iml
+
+# --------
+# Ko Lake Villa Specific
+# --------
+# AI analysis and gallery generated data
+ai-cache/
+ai-analysis/
+gallery-cache/
+
+# Replit autosave backups
+autosave/

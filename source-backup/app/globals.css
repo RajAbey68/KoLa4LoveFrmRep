@@ -1,0 +1,67 @@
+/* Tailwind entry */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* spacing helper if header is sticky */
+.hero-offset{ padding-top: 0.25rem; }
+
+/* Ko Lake Villa Hero - Full Background with Floating Card */
+.hero-fullscreen {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hero image zoom effect */
+.hero-zoom {
+  transform: scale(1.15);
+  transition: transform 0.3s ease-out;
+}
+
+/* Gallery hover effects - Videos enlarge slightly, Images enlarge to 1/4 screen */
+.gallery-item {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, z-index 0.3s ease-out;
+}
+
+.gallery-item.video:hover {
+  transform: scale(1.1);
+  z-index: 20;
+}
+
+.gallery-item.image:hover {
+  transform: scale(1.5);
+  z-index: 30;
+}
+
+/* LOCKED BRANDING - DO NOT MODIFY */
+.klv-logo {
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.klv-logo-locked {
+  content: url('/images/logo.jpeg');
+  height: 2.5rem !important;
+  width: auto !important;
+}
+
+/* Fix image aspect ratio warnings */
+img[src="/images/logo.jpeg"] {
+  width: auto;
+  height: auto;
+}
+
+/* Gallery image improvements */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-thumbnail {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
